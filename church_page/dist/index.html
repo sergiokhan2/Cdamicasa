@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CdaMiCasa</title>
+    <link rel="icon" type="image/png" href="assets/cdamicasa-blanco.png">
+    <meta name="description"
+        content="Comunidad de Familias Renovadas, llenas de Amor del Padre. Conoce nuestra visión, pastores, sedes y ministerios.">
+    <!-- Google Fonts for Premium Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation Menu -->
+    <nav class="sticky-nav" id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/cdamicasa-blanco.png" alt="CDA Logo">
+            </a>
+
+            <input type="checkbox" id="mobile-menu-toggle" style="display: none;">
+            <label for="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars open-icon"></i>
+                <i class="fas fa-times close-icon"></i>
+            </label>
+
+            <ul class="nav-links">
+                <li><a href="#vision">Nosotros</a></li>
+                <li><a href="#reuniones">Reuniones</a></li>
+                <li><a href="#ministerios">Ministerios</a></li>
+                <li><a href="#sedes">Iglesias hijas</a></li>
+                <li><a href="#predicas">Prédicas</a></li>
+                <li><a href="#ofrendas">Dar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Video Section -->
+    <header class="hero-section" style="height: auto; background: #000; position: relative;">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline
+            style="display: block; width: 100%; height: auto;">
+            <source src="assets/bienvenido-a-casa-2024.mp4" type="video/mp4">
+        </video>
+    </header>
+
+    <!-- Nuestra Visión -->
+    <section id="vision" class="section vision-section" style="padding-bottom: 0px;">
+        <div class="container text-center">
+            <h1 class="section-title text-blue">NUESTRA VISIÓN</h1>
+            <p class="vision-text">
+                Somos una COMUNIDAD de Familias Bendecidas, llenas del Amor del Padre y dirigidas por el Espíritu Santo; Adorando sin Reservas y Equipando un Liderazgo Productivo y Transformador
+            </p>
+        </div>
+    </section>
+
+    <!-- Nuestros Pastores -->
+    <section id="pastores" class="section pastores-section" style="display: flex; align-items: center; padding-top: 0; padding-bottom: 40px; background: var(--white); overflow: hidden;">
+        <div class="container flex-row" style="align-items: center; padding-top: 0px; position: relative; gap: 2rem;">
+            <div class="pastores-text" style="flex: 1; z-index: 2;">
+                <h2 class="section-title text-blue text-left" style="margin-bottom: 10px; margin-top: 0; padding-top: 0;">
+                    <span style="font-size: max(4.4rem, 6.3vw); display: block; line-height: 0.8; letter-spacing: -2px;">NUESTROS</span>
+                    <span style="font-size: max(6.6rem, 9.5vw); display: block; line-height: 0.75; letter-spacing: -2px; margin-top: -3px;">PASTORES</span>
+                </h2>
+                <div class="pastor-names" style="margin-top: 20px;">
+                    <h3 style="font-family: var(--font-title); font-size: max(2.5rem, 4vw); line-height: 0.85; color: var(--black); margin-bottom: 0; letter-spacing: -1px;">William Claro</h3>
+                    <p class="role" style="font-family: var(--font-title); font-size: max(1.2rem, 1.7vw); color: var(--black); margin-bottom: 20px; line-height: 1;">(licenciado en Teología)</p>
+                    
+                    <h3 style="font-family: var(--font-title); font-size: max(2.5rem, 4vw); line-height: 0.85; color: var(--black); margin-bottom: 0; letter-spacing: -1px;">Erika Lesmes</h3>
+                    <p class="role" style="font-family: var(--font-title); font-size: max(1.2rem, 1.7vw); color: var(--black); line-height: 1;">(Psicóloga)</p>
+                </div>
+            </div>
+            <div class="pastores-image" style="flex: 1.2; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1;">
+                <img src="assets/pastores_transparente_opt.png" alt="Pastores" id="pastores-img" style="width: 125%; max-width: 1040px; display: block; object-fit: contain;" onerror="this.onerror=null; this.src=''; this.style.backgroundColor='#888'; this.style.height='400px';">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section gray-bg">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">TESTIMONIOS</h2>
+            <div class="testimonios-carousel">
+                <!-- Radio Controls -->
+                <input type="radio" name="testimonios" id="t-1" checked>
+                <input type="radio" name="testimonios" id="t-2">
+                <input type="radio" name="testimonios" id="t-3">
+                <input type="radio" name="testimonios" id="t-4">
+                <input type="radio" name="testimonios" id="t-5">
+                <input type="radio" name="testimonios" id="t-6">
+
+                <div class="testimonios-track-wrapper">
+                    <div class="testimonios-track">
+                        <div class="testimonio-slide">
+                            <label for="t-6" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/Testimonio Conquistadores.mp4" controls></video>
+                            <label for="t-2" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="testimonio-slide">
+                            <label for="t-1" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/Testimonio Yuri.mp4" controls></video>
+                            <label for="t-3" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="testimonio-slide">
+                            <label for="t-2" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/doris  testimonio  p.mp4" controls></video>
+                            <label for="t-4" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="testimonio-slide">
+                            <label for="t-3" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/finalizado - testimonio - familia Gomez.mp4"
+                                controls></video>
+                            <label for="t-5" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="testimonio-slide">
+                            <label for="t-4" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/testimonio Escobar Medina.mp4" controls></video>
+                            <label for="t-6" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                        <div class="testimonio-slide">
+                            <label for="t-5" class="t-arrow t-prev"><i class="fas fa-chevron-left"></i></label>
+                            <video src="assets/testimonios/testimonio lorena galicia.mp4" controls></video>
+                            <label for="t-1" class="t-arrow t-next"><i class="fas fa-chevron-right"></i></label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="testimonios-dots">
+                    <label for="t-1" class="t-dot"></label>
+                    <label for="t-2" class="t-dot"></label>
+                    <label for="t-3" class="t-dot"></label>
+                    <label for="t-4" class="t-dot"></label>
+                    <label for="t-5" class="t-dot"></label>
+                    <label for="t-6" class="t-dot"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Script to pause videos when switching slides in Testimonios
+        document.querySelectorAll('input[name="testimonios"]').forEach(radio => {
+            radio.addEventListener('change', () => {
+                document.querySelectorAll('.testimonio-slide video').forEach(video => {
+                    video.pause();
+                });
+            });
+        });
+    </script>
+
+    <!-- Nuestras Reuniones -->
+    <section id="reuniones" class="section">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">NUESTRAS REUNIONES</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)" aria-label="Anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="reunionesTrack">
+                        <div class="reunion-card">
+                            <picture>
+                                <source srcset="assets/reuniones%20vertical/Bendici%C3%B3n%20familiar%20vertical_opt.jpg" media="(max-width: 768px)">
+                                <img src="assets/reuniones/Bendición familiar wide_opt.jpg" alt="Bendición Familiar">
+                            </picture>
+                        </div>
+                        <div class="reunion-card">
+                            <picture>
+                                <source srcset="assets/reuniones%20vertical/Noches%20de%20adoraci%C3%B3n%20vertical_opt.jpg" media="(max-width: 768px)">
+                                <img src="assets/reuniones/Noches de adoración wide_opt.jpg" alt="Noches de Adoración">
+                            </picture>
+                        </div>
+                        <div class="reunion-card">
+                            <picture>
+                                <source srcset="assets/reuniones%20vertical/Cena%20del%20Se%C3%B1or%20vertical_opt.jpg" media="(max-width: 768px)">
+                                <img src="assets/reuniones/Cena del Señor_opt.jpg" alt="Cena del Señor">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-next" onclick="moveCarousel(1)" aria-label="Siguiente">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <script>
+        const track = document.getElementById('reunionesTrack');
+        const cards = track.querySelectorAll('.reunion-card');
+        const dotsContainer = document.getElementById('carouselDots');
+        let currentIndex = 0;
+
+        // Create dots
+        cards.forEach((_, i) => {
+            const dot = document.createElement('span');
+            dot.classList.add('carousel-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.onclick = () => goToSlide(i);
+            dotsContainer.appendChild(dot);
+        });
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentIndex);
+            });
+        }
+
+        function moveCarousel(direction) {
+            currentIndex = (currentIndex + direction + cards.length) % cards.length;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+    </script>
+
+    <!-- Ministerios -->
+    <section id="ministerios" class="section" style="background: var(--white);">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">MINISTERIOS</h2>
+            <div class="ministerios-grid" style="grid-template-columns: repeat(5, 1fr);">
+
+                <!-- CDA Kids -->
+                <div class="ministerio-wrapper">
+                    <div class="ministerio-logo">
+                        <img src="assets/Cda Kids logo coregido.png" alt="CDA Kids" style="height: 80px;">
+                    </div>
+                    <div class="ministerio-card bg-cdg">
+                        <h3>MINISTERIO INFANTIL CDA KIDS</h3>
+                        <ul>
+                            <li><strong>CdaBabies:</strong><br>Bebés gateadores desde los 8 meses de edad</li>
+                            <li><strong>CdaKids:</strong><br>Niños entre los 4 y 10 años</li>
+                            <li><strong>DNI Explorers:</strong><br>Niños entre los 11 y 13 Años</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Conquistadores -->
+                <div class="ministerio-wrapper">
+                    <div class="ministerio-logo">
+                        <img src="assets/conquistadores-negro.png" alt="Conquistadores" style="height: 80px;">
+                    </div>
+                    <div class="ministerio-card bg-cdg">
+                        <h3>MINISTERIO JUVENIL CONQUISTADORES</h3>
+                        <ul>
+                            <li><strong>Red Juvenil ADN:</strong><br>14 a 17 años</li>
+                            <li><strong>Red Juvenil HD:</strong><br>18 a 23 años</li>
+                            <li><strong>Red Juvenil PLUS:</strong><br>24 a 26 años</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Red de Parejas -->
+                <div class="ministerio-wrapper">
+                    <div class="ministerio-logo">
+                        <img src="assets/red-parejas.png" alt="Red de Parejas" style="height: 80px;">
+                    </div>
+                    <div class="ministerio-card bg-cdg">
+                        <h3>MINISTERIO DE PAREJAS ON LOVE</h3>
+                        <ul>
+                            <li><strong>Edad Esposo</strong></li>
+                            <li><strong>Red Parejas Jóvenes:</strong><br>Hasta 38 años</li>
+                            <li><strong>Red Parejas Avanzadas:</strong><br>39 a 48 años</li>
+                            <li><strong>Red Parejas Senior:</strong><br>49 años o más</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hombres de Valor -->
+                <div class="ministerio-wrapper">
+                    <div class="ministerio-logo">
+                        <img src="assets/hombres-de-valor.png" alt="Hombres de Valor" style="height: 80px;">
+                    </div>
+                    <div class="ministerio-card bg-cdg">
+                        <h3>MINISTERIO DE HOMBRES</h3>
+                        <ul>
+                            <li><strong>Red Varón:</strong><br>27 a 39 años</li>
+                            <li><strong>Red Hombres de Valor:</strong><br>40 años o más</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mujer Virtuosa -->
+                <div class="ministerio-wrapper">
+                    <div class="ministerio-logo">
+                        <img src="assets/Logo mujer virtuosa.png" alt="Mujer Virtuosa" style="height: 80px;">
+                    </div>
+                    <div class="ministerio-card bg-cdg">
+                        <h3>MINISTERIO DE MUJERES</h3>
+                        <ul>
+                            <li><strong>Red Mujeres Pro:</strong><br>27 a 39 años</li>
+                            <li><strong>Red Mujeres Virtuosas:</strong><br>40 años o más</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sedes -->
+    <section id="sedes" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title text-blue text-center" style="margin-bottom: 6rem;">SEDES - IGLESIAS HIJAS</h2>
+
+            <!-- Auditorio Principal -->
+            <div class="sede-row auditorio-card">
+                <div class="sede-info">
+                    <h3 class="sede-title">AUDITORIO PRINCIPAL:<br>KENNEDY - BOGOTÁ</h3>
+                    <p class="pastores">PASTORES PRESIDENTES:<br>WILLIAM Y ERIKA CLARO</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Carrera 78 B #38-26 sur, Kennedy Central</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 8:00am y 11am - Viernes 7:00pm</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. 320 899 1072</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.848114984234!2d-74.15140319999999!3d4.6211728999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e9909c5e549%3A0x8c2fb7239776dce4!2sIglesia%20CdaMiCasa!5e0!3m2!1ses-419!2sco!4v1776295059039!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- CDA BOSA -->
+            <div class="sede-row">
+                <div class="sede-info">
+                    <h3 class="sede-title">CDA BOSA</h3>
+                    <p class="pastores">PASTORES NELSON Y<br>ADRIANA TEJADA</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Calle 65 F sur # 80 C-52</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 8:00am y 10:30am - Viernes 7:00pm</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. 320 767 7396</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7953.846688422563!2d-74.18742798364207!3d4.607744397588776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9e423913c051%3A0xfcaa62fa68673c30!2sCda%20International!5e0!3m2!1ses-419!2sco!4v1776295608596!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- CDA SUBA -->
+            <div class="sede-row">
+                <div class="sede-info">
+                    <h3 class="sede-title">CDA SUBA</h3>
+                    <p class="pastores">PASTORES SERGIO Y<br>MARYLUZ LÓPEZ</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Carrera 107 # 137 B-17</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 9:00am - Viernes 7:00pm</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. 301 218 0013</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0412224390872!2d-74.10001600000001!3d4.741392299999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f34eeeacbd%3A0x2fe0b1d251119c0c!2zQ3JhLiAxMDcgIyAxMzdCLTE3LCBTdWJhLCBCb2dvdMOhLCBELkMuLCBCb2dvdMOh!5e0!3m2!1ses-419!2sco!4v1776295874222!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- CDA IBAGUE -->
+            <div class="sede-row">
+                <div class="sede-info">
+                    <h3 class="sede-title">CDA IBAGUÉ</h3>
+                    <p class="pastores">PASTORES SERGIO Y<br>MARCELA LÓPEZ</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Manzana 26 CS 20 Jordan Etapa 2</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 9:00am - Viernes 7:00pm</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. 321 290 7985</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3977.8732609767526!2d-75.19974952417199!3d4.434693795539533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNMKwMjYnMDQuOSJOIDc1wrAxMSc0OS44Ilc!5e0!3m2!1ses-419!2sco!4v1776296384366!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- CDA PUERTO TEJADA -->
+            <div class="sede-row">
+                <div class="sede-info">
+                    <h3 class="sede-title">CDA PUERTO TEJADA</h3>
+                    <p class="pastores">SUPERVISORES PASTORALES<br>JAROLD Y FRANCY CASARÁN</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Carrera 16 #12-11 - Local 5</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 9:00am - Viernes 6:30pm</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. 320 871 8499</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.963437178372!2d-76.43381393931769!3d3.227254557114873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3a7660ca2257fb%3A0xe4fca95527763382!2sCra.%2016%20%2312-11%2C%20Puerto%20Tejada%2C%20Cauca!5e0!3m2!1ses-419!2sco!4v1776719657353!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- CDA VENEZUELA -->
+            <div class="sede-row reverse">
+                <div class="sede-info">
+                    <h3 class="sede-title">CDA VENEZUELA</h3>
+                    <p class="pastores">SUPERVISORES PASTORALES<br>JULIÁN Y JOHANA PULIDO</p>
+                    <div class="sede-meta">
+                        <p><i class="fas fa-map-marker-alt"></i> Avenida caracas, Edificio número 7 Local 3</p>
+                        <p><i class="fas fa-calendar-alt"></i> Reuniones: Domingo 9:00am - Viernes 7:00pm - Miércoles
+                            6:30am</p>
+                        <p><i class="fab fa-whatsapp"></i> Cel. +58 416 042 6184</p>
+                    </div>
+                </div>
+                <div class="sede-image">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.1048345881204!2d-67.47201292543812!3d7.884099505859524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7880d5e22fc835%3A0xf6723970aad6edea!2sAv.%20Caracas%2C%20San%20Fernando%20de%20Apure%207001%2C%20Apure%2C%20Venezuela!5e0!3m2!1ses-419!2sco!4v1776719593972!5m2!1ses-419!2sco"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Prédicas -->
+    <section id="predicas" class="section black-bg">
+        <div class="container text-center">
+            <h2 class="section-title text-blue">PRÉDICAS</h2>
+            <div class="predicas-grid" id="predicasGrid">
+                <!-- Se cargará dinámicamente con las últimas 4 prédicas de YouTube -->
+                <div class="loading-state" style="grid-column: 1 / -1; padding: 40px; color: #888;">
+                    <i class="fas fa-circle-notch fa-spin" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p>Cargando últimas prédicas...</p>
+                </div>
+            </div>
+
+            <div class="youtube-contact mt-5">
+                <h3 style="font-family: var(--font-title); font-size: 3.4rem; margin-bottom: -10px;">Conéctate con
+                    nosotros en</h3>
+                <a href="https://www.youtube.com/@cdamicasa" target="_blank" class="yt-link"
+                    style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 0;">
+                    <i class="fab fa-youtube text-red" style="font-size: 5rem;"></i>
+                    <span
+                        style="color: white; font-family: var(--font-title); font-size: 3.4rem; line-height: 1;">YouTube
+                        @cdamicasa</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Donation -->
+    <footer id="ofrendas" class="footer-section black-bg">
+        <div class="container text-center">
+            <h2 class="section-title text-blue donaciones-title">OFRENDAS, DIEZMOS Y DONACIONES</h2>
+            <p class="donation-text">"Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque
+                Dios ama al dador alegre" (2 Corintios 9:7)</p>
+
+            <div class="donation-image-container" style="max-width: 900px; margin: 0 auto 60px;">
+                <img src="assets/medios de pago/medios de pago.png" alt="Medios de Pago"
+                    style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            </div>
+        </div>
+
+        <!-- Final Footer Image -->
+        <div class="final-footer-image" style="width: 100%; overflow: hidden; line-height: 0;">
+            <picture>
+                <source srcset="assets/pie%20de%20p%C3%A1gina%20vertical.png" media="(max-width: 768px)">
+                <img src="assets/pie%20de%20p%C3%A1gina.png" alt="Pie de Página" style="width: 100%; height: auto; display: block;">
+            </picture>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Iglesia CDA Internacional. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+ 
+    <!-- YouTube Automation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const CHANNEL_ID = 'UCjdgPG4IaZK-blfKMtx-ZnA';
+            const RSS_URL = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+            const API_URL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(RSS_URL)}`;
+
+            fetch(API_URL)
+                .then(response => response.json())
+                .then(data => {
+                    const grid = document.getElementById('predicasGrid');
+                    if (data.status === 'ok' && data.items) {
+                        grid.innerHTML = ''; // Limpiar estado de carga
+                        
+                        data.items.slice(0, 4).forEach(item => {
+                            const videoId = item.link.split('v=')[1] || item.guid.split(':')[2];
+                            const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                            
+                            const card = document.createElement('a');
+                            card.href = item.link;
+                            card.target = "_blank";
+                            card.rel = "noopener noreferrer";
+                            card.className = "predica-card";
+                            
+                            card.innerHTML = `
+                                <img src="${thumbnailUrl}" alt="${item.title}" onerror="this.src='https://img.youtube.com/vi/${videoId}/hqdefault.jpg'">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                            `;
+                            grid.appendChild(card);
+                        });
+                    } else {
+                        throw new Error('No se pudieron obtener los videos');
+                    }
+                })
+                .catch(error => {
+                    console.error('YouTube Fetch Error:', error);
+                    const grid = document.getElementById('predicasGrid');
+                    grid.innerHTML = '<p style="grid-column: 1/-1; color: #888;">No se pudieron cargar las prédicas. Visita nuestro canal de YouTube.</p>';
+                });
+        });
+    </script>
+
+</body>
+
+</html>
